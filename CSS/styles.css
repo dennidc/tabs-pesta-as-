@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: helvetica;
+    font-size: 16px;
+    line-height: 24px;
+    color: #333;
+    background-color: #F0F3F8;
+}
+
+.ancho{
+ max-width: 1200px;
+ margin: auto;
+}
+
+.title1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #0AACF7;
+    font-weight: 500;
+}
+.title2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+
+ul.tabs a{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+ul.tabs li a:hover{
+background-color: #0973D7;
+color: white;
+}
+
+html ul.tabs li.active{
+    background-color: #0973D7;
+}
+
+html ul.tabs li.active a:hover{
+    background-color: #0973D7;
+}
+ul.tabs li.active a {
+    color: white;
+}
+
+ul.tabs{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    max-width:55%;
+    align-items: flex-start;
+}
+
+ul.tabs li{
+    width: 33.33%;
+    text-align: center;
+    border-radius: 5px;
+}
+.btn{
+    text-align: center;
+}
+.btn-a{
+    padding: 10px 20px;
+    background-color: #0973D7;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(55, 175, 254,0.9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 5px;
+}
+
+.overlay-content {
+    text-align: center;
+    padding: 20px;
+}
+
+.overlay h3 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.overlay p {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.image-container:hover .overlay {
+    opacity: 1;
+}
+
+.tamanio{
+    font-size: 50px;
+}
+.tamanio2{
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.tab_content2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tamanio-img1{
+    max-width: 70%;
+}
+.tamanio-img2{
+    max-width: 40%;
+}
+
+.msg{
+    font-size: 25px;
+    color: #fff;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
